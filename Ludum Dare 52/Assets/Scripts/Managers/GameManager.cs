@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+	public int collectibleCount = 0;
 
-	// Update is called once per frame
-	void Update()
-    {
-    }
+	public static GameManager Instance;
+
+	private void Awake()
+	{
+		Instance = this;
+	}
 }
