@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf84ee95a994243428135b2b0cd7de4e, type: 3}
   m_Name: Cabbage
   m_EditorClassIdentifier: 
-  collectibleSprite: {fileID: 21300000, guid: 7c078205a41deb24b9494472882e303c, type: 3}
+  collectibleSprite: {fileID: 111111453, guid: f946c75e966a4304db70d150e551a8c4, type: 3}
