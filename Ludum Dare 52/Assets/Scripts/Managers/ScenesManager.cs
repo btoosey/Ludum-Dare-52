@@ -19,7 +19,9 @@ public class ScenesManager : MonoBehaviour
 		Level02,
 		Level03,
 		Level04,
-		Level05
+		Level05,
+		Level06,
+		Credits
 	}
 
 	public void LoadScene(Scene scene)

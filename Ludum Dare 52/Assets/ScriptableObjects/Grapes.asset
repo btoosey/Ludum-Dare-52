@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf84ee95a994243428135b2b0cd7de4e, type: 3}
+  m_Name: Grapes
+  m_EditorClassIdentifier: 
+  collectibleSprite: {fileID: 200105083, guid: f946c75e966a4304db70d150e551a8c4, type: 3}
