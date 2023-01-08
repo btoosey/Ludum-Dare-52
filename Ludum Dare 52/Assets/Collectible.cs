@@ -24,6 +24,10 @@ public class Collectible : MonoBehaviour
         GameManager.Instance.collectibleCount += 1;
         if (collectibles.Length == GameManager.Instance.collectibleCount)
 		{
+            foreach (GameObject player in GameObject.FindGameObjectsWithTag("Player"))
+            {
+                player.GetComponent<PlayerMovement>().canMove = false;
+            }
             StartCoroutine(NextLevel());
         }
 	}
