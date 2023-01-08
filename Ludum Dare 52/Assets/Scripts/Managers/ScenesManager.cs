@@ -15,7 +15,11 @@ public class ScenesManager : MonoBehaviour
 	public enum Scene
 	{
 		MainMenu,
-		Level01
+		Level01,
+		Level02,
+		Level03,
+		Level04,
+		Level05
 	}
 
 	public void LoadScene(Scene scene)
@@ -30,7 +34,13 @@ public class ScenesManager : MonoBehaviour
 
 	public void LoadNextScene()
 	{
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		if (SceneManager.GetActiveScene().)
+		{
+			LoadMainMenu();
+		} else
+		{
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		}	
 	}
 
 	public void ReloadScene()
