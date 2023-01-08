@@ -9,6 +9,7 @@ public class Collectible : MonoBehaviour
     private CollectibleSO collectibleConfig;
     private GameObject[] collectibles;
     private string tagName = "Collectible";
+    private bool collectible = true;
 
     void Start()
     {
@@ -19,8 +20,12 @@ public class Collectible : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D collider)
 	{
+        if (collectible == false)
+            return;
+
         IncreaseScore(1, collider);
         gameObject.GetComponent<SpriteRenderer>().sprite = null;
+        collectible = false;
         GameManager.Instance.collectibleCount += 1;
         if (collectibles.Length == GameManager.Instance.collectibleCount)
 		{
