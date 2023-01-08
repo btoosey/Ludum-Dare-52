@@ -34,13 +34,7 @@ public class ScenesManager : MonoBehaviour
 
 	public void LoadNextScene()
 	{
-		if (SceneManager.GetActiveScene().)
-		{
-			LoadMainMenu();
-		} else
-		{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-		}	
 	}
 
 	public void ReloadScene()
