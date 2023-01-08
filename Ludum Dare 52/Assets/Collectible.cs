@@ -20,12 +20,12 @@ public class Collectible : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D collider)
 	{
         IncreaseScore(1, collider);
-        gameObject.SetActive(false);
+        gameObject.GetComponent<SpriteRenderer>().sprite = null;
         GameManager.Instance.collectibleCount += 1;
         if (collectibles.Length == GameManager.Instance.collectibleCount)
 		{
-            ScenesManager.Instance.LoadNextScene();
-		}
+            StartCoroutine(NextLevel());
+        }
 	}
 
     private void IncreaseScore(int value, Collider2D other)
@@ -33,5 +33,10 @@ public class Collectible : MonoBehaviour
         other.gameObject.GetComponent<Player>().score += value;
 	}
 
+    IEnumerator NextLevel()
+    {
+        yield return new WaitForSeconds(1f);
+        ScenesManager.Instance.LoadNextScene();
+    }
 
 }
