@@ -21,6 +21,8 @@ public class ScenesManager : MonoBehaviour
 		Level04,
 		Level05,
 		Level06,
+		Level07,
+		Level08,
 		Credits
 	}
 
